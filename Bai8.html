@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+             <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+                         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+             <title>Bai8</title>
+</head>
+<body>
+<p>Game đoán số</p>
+<input type="button" id="play" value="play" onclick="playGame();">
+<script >
+function playGame() {
+  let num1=parseInt(prompt("nhap vao khoang du doan"));
+  let x = Math.floor((Math.random() * num1) + 1);
+  console.log(x);
+  let num2=parseInt(prompt("nhap vao so du doan"));
+  for (let i=1;i<=num1;i++){
+      if(x!=num2){
+      num2=parseInt(prompt(" sai roi!!!nhap lai so du doan"));
+      }
+      else{
+       alert("chuc mung");
+       break;
+      }
+
+  }
+}
+</script>
+</body>
+</html>
